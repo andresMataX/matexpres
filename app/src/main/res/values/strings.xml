@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">MatExpres</string>
+    <string name="contLogin">Gato Bienvenida</string>
+    <string name="contJugar">Iniciar Aplicación</string>
+
+    <!--Seleccionar Usuario-->
+    <string name="tvApp">MatExprés</string>
+    <string name="tvIngresar">¿Quién está ingresando ahora?</string>
+    <string name="btnUsuario1">Usuario 1</string>
+    <string name="btnUsuario2">Nuevo</string>
+    <string name="btnUsuario3">Usuario 3</string>
+    <string name="btnUsuario4">Usuario 4</string>
+    <string name="btnPreguntas">Preguntas Frecuentes</string>
+    <string name="contEditar">Editar Usuarios</string>
+
+    <!--Perfil-->
+    <string name="btnMenu">Menú</string>
+    <string name="btnPerfil">Perfil</string>
+    <string name="btnBuzon">Buzón</string>
+    <string name="btnSalir">Salir</string>
+    <string name="tvNombre">Nombre</string>
+    <string name="etUsername">Usuario 1</string>
+    <string name="tvNivel">Nivel</string>
+    <string name="tvNivelGral">1</string>
+    <string name="tvExp">Exp</string>
+    <string name="tvNivExp">0</string>
+    <string name="tvTitulo">Nivel de cada operación</string>
+    <string name="btnSum">Suma</string>
+    <string name="btnRest">Resta</string>
+    <string name="btnMulti">Multiplicación</string>
+    <string name="btnDiv">División</string>
+    <string name="tvNivelSum">Nivel 1</string>
+    <string name="tvNivelRes">Nivel 1</string>
+    <string name="tvNivelMul">Nivel 1</string>
+    <string name="tvNivelDiv">Nivel 1</string>
+    <string name="contAvatar">Avatar del usuario</string>
+    <string name="contEditAvatar">Editar avatar</string>
+
+    <!--Operación Suma-->
+    <string name="btnPista">Pista</string>
+    <string name="btnTeoria">Teoría</string>
+    <string name="btnRevisar">Revisar</string>
+    <string name="tvSumando1">4</string>
+    <string name="tvSumando2">8</string>
+    <string name="btnRespuesta1">2</string>
+    <string name="btnRespuesta2">10</string>
+    <string name="btnRespuesta3">12</string>
+    <string name="btnRespuesta4">60</string>
+    <string name="tvNivelOperacion">Nivel </string>
+    <string name="contSignoSuma">Signo de suma</string>
+    <string name="contVidas">Vidas del jugador</string>
+    <string name="contFondo">Fondo de la pantalla</string>
+</resources>

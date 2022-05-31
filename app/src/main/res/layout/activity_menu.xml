@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Menu">
+
+    <TextView
+            android:layout_width="122dp"
+            android:layout_height="786dp"
+            android:id="@+id/tvBarraLateral2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="#F1CFF5" />
+
+    <Button
+            android:text="@string/btnMenu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMenu_teoria"
+            android:drawableTop="@drawable/home_seleccionado"
+            android:background="@android:color/transparent"
+            android:textSize="19sp"
+            android:textColor="#FF9800"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"
+            tools:ignore="TextContrastCheck" />
+
+    <Button
+            android:text="@string/btnPerfil"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTeoria_teoria"
+            android:drawableTop="@drawable/perfil"
+            android:background="@android:color/transparent"
+            android:textSize="19sp"
+            android:textColor="@color/purple_3"
+            android:textAllCaps="false"
+            tools:ignore="TextContrastCheck"
+            app:layout_constraintTop_toBottomOf="@+id/btnMenu_teoria"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:onClick="perfil" />
+
+    <Button
+            android:text="@string/btnBuzon"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEjercicio_teoria"
+            android:drawableTop="@drawable/notificaciones"
+            android:background="@android:color/transparent"
+            android:textSize="19sp"
+            android:textColor="@color/purple_3"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/btnTeoria_teoria"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:onClick="buzon" />
+
+    <Button
+            android:text="@string/btnPreguntas"
+            android:layout_width="120dp"
+            android:layout_height="61dp"
+            android:id="@+id/btnPregFreg_menu"
+            android:background="@android:color/transparent"
+            android:textColor="@color/purple_3"
+            android:textSize="11sp"
+            android:textAlignment="inherit"
+            app:layout_constraintTop_toBottomOf="@+id/btnEjercicio_teoria"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:onClick="preguntas" />
+
+    <Button
+            android:text="@string/btnSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/btnSalir_teoria"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:onClick="salir" />
+
+    <Button
+            android:text="@string/btnSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:drawableTop="@drawable/boton_suma_menu"
+            android:background="@android:color/transparent"
+            android:textColor="@color/purple_3"
+            app:layout_constraintStart_toEndOf="@+id/tvBarraLateral2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:onClick="suma" />
+
+    <Button
+            android:text="@string/btnRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:drawableTop="@drawable/boton_res_menu"
+            android:background="@android:color/transparent"
+            android:textColor="@color/purple_3"
+            app:layout_constraintStart_toEndOf="@+id/tvBarraLateral2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:onClick="resta" />
+
+    <Button
+            android:text="@string/btnMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:drawableTop="@drawable/boton_mul_menu"
+            android:background="@android:color/transparent"
+            android:textColor="@color/purple_3"
+            app:layout_constraintStart_toEndOf="@+id/tvBarraLateral2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:onClick="multi" />
+
+    <Button
+            android:text="@string/btnDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:drawableTop="@drawable/boton_div_menu"
+            android:background="@android:color/transparent"
+            android:textColor="@color/purple_3"
+            app:layout_constraintStart_toEndOf="@+id/tvBarraLateral2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:onClick="divi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Mensaje"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <TextView
+            android:text="¡Bienvenida a MatExprés!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textSize="18sp"
+            android:textColor="@color/purple_3" />
+
+    <TextView
+            android:text="Es un gusto poder darte la bienvenida a la familia de MatExprés, aquí podrás fomentar tu autoaprendizaje a la materia básica de matemáticas.   Todo lo que tienes que hacer es seleccionar la operación en la cual deseas empezar en el apartado de menú o desde tu perfil de usuario.  "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+    <TextView
+            android:text="Recuerda que MatExprés nunca te pedirá información personal de tu cuenta bancaria."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:textSize="18sp"
+            android:textColor="@color/purple_2" />
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/gato8"
+            android:id="@+id/imageView10"
+            android:layout_marginLeft="250dp"
+            android:background="@android:color/transparent" />
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Multiplicacion"
+        android:background="@drawable/fondo">
+
+    <Button
+            android:text="@string/btnPista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPista"
+            android:drawableTop="@drawable/pista"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/btnTeoria"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="66dp"
+            android:onClick="pista" />
+
+    <Button
+            android:text="@string/btnTeoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTeoria"
+            android:drawableTop="@drawable/teoria"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/btnPista"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="66dp"
+            android:onClick="teoria" />
+
+    <TextView
+            android:text="@string/tvSumando1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sumando1"
+            android:textSize="100sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="116dp"
+            android:layout_marginEnd="144dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textStyle="bold" />
+
+    <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/signo_multiplicacion"
+            android:id="@+id/signo_suma"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="248dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="84dp"
+            android:contentDescription="@string/contSignoSuma" />
+
+    <TextView
+            android:text="@string/tvSumando2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sumando2"
+            android:textSize="100sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="280dp"
+            android:layout_marginEnd="144dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textStyle="bold" />
+
+    <Button
+            android:text="@string/btnRespuesta1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/btnRespuesta1"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/btnRespuesta2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="212dp"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            app:strokeColor="@color/ic_launcher_background"
+            android:layout_marginStart="10dp"
+            android:onClick="revisar" />
+
+    <Button
+            android:text="@string/btnRespuesta4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/btnRespuesta4"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnRespuesta3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="212dp"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            app:strokeColor="@color/black"
+            app:rippleColor="@color/black"
+            app:iconTint="@color/black"
+            android:layout_marginEnd="10dp"
+            android:onClick="revisar" />
+
+    <Button
+            android:text="@string/btnRespuesta2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/btnRespuesta2"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/btnRespuesta1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/btnRespuesta3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="212dp"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            app:strokeColor="@color/ic_launcher_background"
+            android:onClick="revisar" />
+
+    <Button
+            android:text="@string/btnRespuesta3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/btnRespuesta3"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@+id/btnRespuesta2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/btnRespuesta4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="212dp"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            app:strokeColor="@color/ic_launcher_background"
+            android:onClick="revisar" />
+
+    <TextView
+            android:text="@string/tvNivelOperacion"
+            android:layout_width="134dp"
+            android:layout_height="40dp"
+            android:id="@+id/nivel"
+            android:background="@drawable/banner_nivel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAlignment="gravity"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="20sp"
+            android:textColor="@color/purple_2"
+            tools:ignore="TextContrastCheck"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+            android:layout_width="154dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/vidas_cinco"
+            android:id="@+id/vidas"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="26dp"
+            android:contentDescription="@string/contVidas"
+            app:layout_constraintTop_toBottomOf="@+id/nivel"
+            android:layout_marginTop="10dp" />
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/navbar"
+            android:id="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvModo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvModo" />
+
+    <TextView
+            android:text="Multiplicación > Principiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvModo"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
